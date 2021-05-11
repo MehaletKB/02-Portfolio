@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(166, 204, 240);
+    background-image: linear-gradient(to right, rgba(55, 123, 201, 0.5) , rgba(233, 233, 119, 0.5));}
+
+header {
+    padding: 20px;
+    background-color:#2a607c;
+    color: #ffffff;
+} 
+
+h1 {
+    display: inline-block;
+}
+
+nav ul {
+    display: flex;
+    float: right;
+    list-style: none;
+    justify-content: space-between;
+}
+
+span {
+    color:rgb(55, 171, 238)
+}
