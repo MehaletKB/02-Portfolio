@@ -69,6 +69,7 @@ a {
     font-size: 20px;
 }
 
+
 .about {
     display: grid;
     padding: 10px 10px 0px 10px;
@@ -77,8 +78,12 @@ a {
     color: var(--white-text);
 }
 
-.about div,h3 {
+.about div {
     background: var(--grid-background-color);
+    padding: 10px;
+}
+
+.about h3{
     padding: 10px;
 }
 
@@ -174,9 +179,9 @@ footer p{
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 640px){
-    .work img {
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
+/* @media screen and (max-width: 640px){
+    .about h2 {
+        font-size: 2vw;
+    }
+     */
 }
