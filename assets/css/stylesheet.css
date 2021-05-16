@@ -4,10 +4,12 @@
 
 body {
     height: 1vh;
+    background-color: rgb(39, 39, 39);
 }
 
 .container {
     z-index: 1;
+    display: inline-block;
     position: relative;
     background-image: url("../images/hero.jpg");
     height: 750px;
@@ -16,9 +18,16 @@ body {
     background-position: center;
 }
 
+.container img {
+    filter: drop-shadow(0px 0px 10px rgba(31, 29, 16, 0.555));
+    max-width: 300px;
+    margin-top: -250px;
+    margin-left: 10%;
+}
+
 .box {
     z-index: 2;
-    background-color: #ffffff7e;
+    background-color: rgba(34, 39, 36, 0.329);
     width: 400px;
     height: 100%;
     border: 0px;
@@ -69,17 +78,51 @@ a {
     justify-content: space-around;
 }
 
-.work img:hover {
+.work img {
+    max-width: 100%;
+}
+
+.work img:hover,.work img:focus {
     filter: drop-shadow(0px 0px 12px rgba(218, 216, 150, 0.555));
 }
 
 .resume {
     display: grid;
-    padding: 10px;
     grid-template-columns: 1fr 7fr;
+    padding: 0px 10px;
     grid-gap: 10px;
 }
 
 .resume div {
     background: green;
     padding: 10px;
+    
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.contact div {
+    background: green;
+    padding: 10px;
+}
+
+.contact input {
+    display: inline-block;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 70%;
+}
+
+.contact label {
+    display: block;
+}
+
+.contact button {
+    display: block;
+}
+
