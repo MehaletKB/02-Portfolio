@@ -1,10 +1,15 @@
+:root {
+    --grid-background-color:rgb(24, 116, 104);
+    --white-text: #ffffff;
+}
+
 * {
     margin: 0;
 }
 
 body {
-    height: 1vh;
-    background-color: rgb(39, 39, 39);
+    background: rgb(13,32,21);
+    background: linear-gradient(180deg, rgba(13,32,21,1) 0%, rgba(28,97,69,1) 58%, rgba(23,67,76,1) 79%, rgba(19,46,81,1) 100%);
 }
 
 .container {
@@ -26,8 +31,7 @@ body {
 }
 
 .box {
-    z-index: 2;
-    background-color: rgba(34, 39, 36, 0.329);
+    background-image: linear-gradient(30deg, rgba(0, 148, 233, 0.5) 0%, rgba(73, 133, 98, 0.5) 50%, #283a2a 100%);
     width: 400px;
     height: 100%;
     border: 0px;
@@ -35,9 +39,9 @@ body {
 }
 
 .box-overlay {
-    z-index: 3;
     margin-top: -300px;
     margin-left: 60%;
+    color: var(--white-text)
 }
 
 .box-overlay li {
@@ -54,10 +58,11 @@ a {
     padding: 10px 10px 0px 10px;
     grid-template-columns: 1fr 7fr;
     grid-gap: 10px;
+    color: var(--white-text);
 }
 
 .about div {
-    background: green;
+    background: var(--grid-background-color);
     padding: 10px;
 }
 
@@ -66,10 +71,11 @@ a {
     padding: 10px;
     grid-template-columns: 1fr 7fr;
     grid-gap: 10px;
+    color: var(--white-text);
 }
 
 .work div {
-    background: green;
+    background: var(--grid-background-color);
     padding: 10px;
 }
 
@@ -91,10 +97,11 @@ a {
     grid-template-columns: 1fr 7fr;
     padding: 0px 10px;
     grid-gap: 10px;
+    color: var(--white-text);
 }
 
 .resume div {
-    background: green;
+    background: var(--grid-background-color);
     padding: 10px;
     
 }
@@ -104,16 +111,19 @@ a {
     grid-template-columns: 1fr 7fr;
     padding: 10px;
     grid-gap: 10px;
+    color: var(--white-text);
 }
 
 .contact div {
-    background: green;
+    background: var(--grid-background-color);
     padding: 10px;
 }
 
 .contact input {
     display: inline-block;
-    border-radius: 4px;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    border
     margin-bottom: 15px;
     width: 70%;
 }
@@ -122,7 +132,21 @@ a {
     display: block;
 }
 
-.contact button {
-    display: block;
+#message {
+    min-height: 75px;
+    width: 50pz;
+    text-align: top;
 }
 
+.contact button {
+    margin-top: 10px;
+    border-radius: 6px;
+    display: block;
+    cursor: pointer;
+}
+
+footer p{
+    color: var(--white-text);
+    text-align: center;
+    margin-bottom: 10px;
+}
