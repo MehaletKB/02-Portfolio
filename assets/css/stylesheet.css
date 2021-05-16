@@ -148,8 +148,7 @@ a {
     display: inline-block;
     border-radius: 6px;
     background-color: rgb(255, 255, 255);
-    border
-    margin-bottom: 15px;
+    margin-bottom:15px;
     width: 85%;
 }
 
@@ -179,12 +178,16 @@ footer p{
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 400px){
-    }
+/* @media screen and (min-width: 400px){
     h2 {
+        font-size: 70%;
+    }
+
+    p{
         font-size: 1em;
     }
 
     .work-images {
-        width: auto;
-    }
+        flex-direction: row;
+    }  */
+}
