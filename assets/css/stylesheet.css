@@ -5,7 +5,7 @@
 
 * {
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -65,7 +65,7 @@ body {
     padding: 5px;
 }
 
-.container ul:hover {
+.links:hover {
     text-decoration: underline;
     filter: drop-shadow(0px 0px 20px rgb(0, 0, 0));
 }
@@ -91,7 +91,8 @@ a {
 }
 
 .about h3{
-    padding: 10px;
+    padding-top: 0px;
+    padding-left: 10px;
 }
 
 .work {
@@ -131,7 +132,6 @@ a {
 .resume div {
     background: var(--grid-background-color);
     padding: 10px;
-    
 }
 
 .resume div:hover {
@@ -170,6 +170,7 @@ a {
 #message {
     min-height: 75px;
     text-align: top;
+    border-radius: 6px;
 }
 
 .contact button {
@@ -187,46 +188,48 @@ footer p{
 
 @media screen and (max-width: 667px){
     .section-title {
-        font-size: 70%;
+        font-size: 90%;
+        word-break: normal;
     }
 
     .container img {
-        max-width: 50%;
-        display: flex;
-        
+        max-width: 85%;
+        margin-top: -500px;
+        margin-bottom: 30px;
+        margin-left: 3px;
     }
 
     #logo {
         display: flex;
         align-self: center;
     }
+
     .container h1 {
-        font-size: 100%;
-        display:flex;
-        align-self:flex-start;
+        font-size: 200%;
+        display:inline;
+        margin-top: 5px;
+        margin-left: 0px;
+        word-wrap: break-word;
+    }
+
+    .container ul {
+        margin-top: 30px;
     }
 
     .links {
         display: flex;
         align-self: flex-start;
+        margin-left: -50px;
     }
 
     .work-images {
         display: flex;
         flex-direction: column;
-        max-width: 70%;
+        max-width: 100%;
     }
 
-    .work {
-        width: 100%;
+    .contact h3 {
+        margin-left: 0;
     }
 
-
-    /* p{
-        font-size: 1em;
-    }
-
-    .work-images {
-        flex-direction: row;
-    }  */
 }
